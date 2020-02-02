@@ -1,0 +1,626 @@
+@charset "UTF-8";
+html {
+  font-size: 62.5%; }
+
+.container {
+  max-width: 1400px; }
+
+nav a {
+  position: relative;
+  display: inline-block;
+  outline: none;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-weight: 200;
+  text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+  font-size: 1.35em; }
+
+nav a:hover,
+nav a:focus {
+  outline: none; }
+
+body a {
+  cursor: pointer;
+  position: relative; }
+@media screen and (max-width: 550px) {
+  body .container {
+    width: 100%; } }
+
+@keyframes .fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-webkit-keyframes .fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+.swiper-container {
+  width: 100%;
+  height: 420px; }
+  .swiper-container .swiper-wrapper img {
+    max-width: 1000px; }
+
+.swiper-button-next {
+  height: 90px;
+  background-image: url("../image/page_next.svg");
+  background-size: cover;
+  background-position: center center; }
+
+.swiper-button-prev {
+  height: 90px;
+  background-image: url("../image/page_prev.svg");
+  background-size: cover;
+  background-position: center center; }
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center; }
+
+.textbox {
+  text-align: justify; }
+
+#home {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  background-color: white;
+  display: block; }
+  #home img {
+    margin-top: 5px; }
+  @media screen and (max-width: 550px) {
+    #home .container {
+      padding: 0; } }
+
+.pc_navi {
+  padding: 0; }
+  .pc_navi .pc_navi_li {
+    text-align: right;
+    margin: 25px 0 0 0; }
+    .pc_navi .pc_navi_li li {
+      display: inline-block;
+      list-style: none;
+      margin-left: 10px; }
+      .pc_navi .pc_navi_li li a {
+        color: #000;
+        text-decoration: none;
+        font-family: "Domine";
+        font-weight: 650;
+        font-size: 1.6rem; }
+  .pc_navi .cl-effect-4 a {
+    padding: 0 0 5px; }
+  .pc_navi .cl-effect-4 a::after {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #000;
+    content: '';
+    opacity: 0;
+    -webkit-transition: height 0.2s, opacity 0.3s, -webkit-transform 0.3s;
+    -moz-transition: height 0.2s, opacity 0.3s, -moz-transform 0.3s;
+    transition: height 0.2s, opacity 0.3s, transform 0.3s;
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    transform: translateY(-10px); }
+  .pc_navi .cl-effect-4 a:hover::after,
+  .pc_navi .cl-effect-4 a:focus::after {
+    height: 2px;
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    transform: translateY(0px); }
+
+@media screen and (max-width: 550px) {
+  .pc_navi {
+    display: none; } }
+.sp_navi ul {
+  text-align: right;
+  list-style: none;
+  margin-top: 30%; }
+  .sp_navi ul .nav_icon {
+    float: right; }
+  .sp_navi ul li a {
+    color: #000;
+    margin: 10px 30px 0 0;
+    font-size: 2.4rem;
+    font-family: "Domine"; }
+
+@media screen and (min-width: 550px) {
+  .sp_navi {
+    display: none; } }
+.center {
+  position: absolute;
+  top: 14px;
+  right: 70px;
+  bottom: 0; }
+  .center a {
+    text-decoration: none;
+    margin-right: 8px; }
+    .center a img {
+      width: 4rem; }
+
+@media screen and (min-width: 550px) {
+  .center {
+    display: none; } }
+.pure-drawer {
+  background-color: #f7f8f8; }
+
+.pure-toggle-label {
+  border: none; }
+
+.pure-toggle-label .pure-toggle-icon,
+.pure-toggle-label .pure-toggle-icon:before,
+.pure-toggle-label .pure-toggle-icon:after {
+  background-color: #dacd66; }
+
+.pure-toggle-label:hover .pure-toggle-icon,
+.pure-toggle-label:hover .pure-toggle-icon:before,
+.pure-toggle-label:hover .pure-toggle-icon:after {
+  background-color: #dacd66; }
+
+.pure-toggle-label[data-toggle-label='right'] {
+  right: 13px;
+  top: 5px; }
+
+@media screen and (max-width: 550px) {
+  .pc_slide {
+    display: none; } }
+#top {
+  position: relative;
+  height: 560px;
+  max-width: 1400px;
+  margin: 0 auto;
+  background-image: url("../image/top-cover.png");
+  background-size: cover;
+  background-position: center center; }
+  @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+    #top {
+      background-image: url("../image/top-cover@2x.png"); } }
+  #top .logo_18 {
+    position: absolute;
+    top: 140px;
+    left: 10%; }
+
+@media screen and (max-width: 550px) {
+  #top {
+    display: none; } }
+.title {
+  text-align: center; }
+  .title img {
+    display: inline-block;
+    margin-right: auto;
+    margin-left: auto; }
+  .title p {
+    font-family: "Sawarabi Mincho", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Verdana, "ＭＳ Ｐゴシック", sans-serif;
+    font-size: 1.6rem;
+    letter-spacing: 0.5rem;
+    margin: 40px 10px 60px 10px; }
+    .title p span {
+      text-transform: uppercase; }
+    @media screen and (max-width: 550px) {
+      .title p {
+        margin: 30px 0;
+        font-size: 1.4rem;
+        padding: 0 20px; } }
+    @media screen and (min-width: 550px) {
+      .title p .sp_br {
+        display: none; } }
+
+@media screen and (max-width: 769px) {
+  .title {
+    width: 90%; }
+
+  .sp_slide {
+    width: 100%; } }
+#top2 {
+  position: relative;
+  height: 520px;
+  background-image: url("../image/sp-top.jpg");
+  background-size: cover;
+  background-position: center center; }
+  @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+    #top2 {
+      background-image: url("../image/sp-top@2x.jpg"); } }
+
+@media screen and (min-width: 550px) {
+  #top2 {
+    display: none; } }
+.sub_title {
+  text-align: center;
+  padding: 0; }
+  @media screen and (max-width: 550px) {
+    .sub_title {
+      background: #f7f8f8; } }
+  .sub_title .sp_door {
+    text-align: center;
+    margin-bottom: 20px; }
+    .sub_title .sp_door .sp_door_image {
+      margin: 0;
+      height: 280px;
+      background-image: url("../image/2face.png");
+      background-size: cover;
+      background-position: right center; }
+    .sub_title .sp_door h2 {
+      font-family: "EB Garamond";
+      font-size: 2.8rem;
+      color: #dacd66;
+      margin-top: 70px; }
+    .sub_title .sp_door p {
+      font-size: 1.5rem; }
+  @media screen and (min-width: 550px) {
+    .sub_title .sp_door {
+      display: none; } }
+  .sub_title h2 {
+    font-family: "EB Garamond";
+    font-size: 3.2rem;
+    letter-spacing: .3rem;
+    color: #dacd66;
+    margin-top: 20px; }
+    @media screen and (min-width: 550px) {
+      .sub_title h2 .br_sp {
+        display: none; } }
+  .sub_title p {
+    font-family: "Sawarabi Mincho", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Verdana, "ＭＳ Ｐゴシック", sans-serif;
+    font-size: 1.6rem;
+    letter-spacing: 0.5rem;
+    margin-bottom: 70px; }
+
+@media screen and (max-width: 550px) {
+  .pc_sub {
+    display: none; } }
+.premium {
+  position: relative;
+  text-align: center; }
+  .premium .premium_img {
+    height: 0;
+    padding-top: 42.16%;
+    background-image: url("../image/inside-pano.jpg");
+    background-size: cover;
+    background-position: center center;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    max-width: 1600px; }
+    @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+      .premium .premium_img {
+        background-image: url("../image/inside-pano@2x.jpg"); } }
+    @media screen and (max-width: 550px) {
+      .premium .premium_img {
+        background-image: url("../image/inside-sp.jpg");
+        background-size: cover;
+        background-position: center center;
+        padding: 0;
+        height: 400px; } }
+  .premium h3 {
+    font-size: 8rem;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: 0 auto;
+    font-family: "Mr Dafoe";
+    color: white;
+    text-shadow: 1px 1px 1px #000; }
+    @media screen and (max-width: 550px) {
+      .premium h3 {
+        font-size: 6rem; } }
+    @media screen and (min-width: 550px) {
+      .premium h3 .sp_br {
+        display: none; } }
+
+.textbox {
+  font-family: "Sawarabi Mincho", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Verdana, "ＭＳ Ｐゴシック", sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 0.5rem;
+  padding: 0 30px;
+  margin-bottom: 60px; }
+  .textbox span {
+    text-transform: uppercase; }
+  @media screen and (max-width: 550px) {
+    .textbox {
+      padding: 0;
+      font-size: 1.4rem;
+      padding: 0 30px; } }
+  .textbox .long1 {
+    margin-top: 60px;
+    height: 600px;
+    background-image: url("../image/long2.jpg");
+    background-size: cover;
+    background-position: center center; }
+    @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+      .textbox .long1 {
+        background-image: url("../image/long2@2x.jpg"); } }
+    @media screen and (max-width: 550px) {
+      .textbox .long1 {
+        height: 400px; } }
+  .textbox .long2 {
+    margin-bottom: 60px;
+    height: 600px;
+    background-image: url("../image/front2.png");
+    background-size: cover;
+    background-position: center center; }
+    @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+      .textbox .long2 {
+        background-image: url("../image/front2@2x.png"); } }
+    @media screen and (max-width: 550px) {
+      .textbox .long2 {
+        height: 400px;
+        margin: 60px 0 0 0; } }
+  .textbox .long3 {
+    margin-bottom: 60px;
+    height: 600px;
+    background-image: url("../image/drive_back.jpg");
+    background-size: cover;
+    background-position: center center; }
+    @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+      .textbox .long3 {
+        background-image: url("../image/drive_back@2x.jpg"); } }
+    @media screen and (max-width: 550px) {
+      .textbox .long3 {
+        height: 400px;
+        margin: 60px 0 0 0; } }
+  .textbox .long4 {
+    height: 600px;
+    background-image: url("../image/long4.jpg");
+    background-size: cover;
+    background-position: center center; }
+    @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+      .textbox .long4 {
+        background-image: url("../image/long4@2x.jpg"); } }
+    @media screen and (max-width: 550px) {
+      .textbox .long4 {
+        height: 400px; } }
+  @media screen and (max-width: 550px) {
+    .textbox .pc_p {
+      display: none; } }
+  @media screen and (min-width: 550px) {
+    .textbox .sp_p {
+      display: none; } }
+  .textbox h4 {
+    font-size: 2.4rem;
+    font-family: "ヒラギノ角ゴ Pro W3";
+    font-weight: 400; }
+  @media screen and (max-width: 550px) {
+    .textbox .pc_h4 {
+      display: none; } }
+  @media screen and (min-width: 550px) {
+    .textbox .sp_h4 {
+      display: none; } }
+
+.rapping {
+  margin-bottom: 100px;
+  height: 420px;
+  background-image: url("../image/premium-end.jpg");
+  background-size: cover;
+  background-position: center center; }
+  @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+    .rapping {
+      background-image: url("../image/premium-end@2x.jpg"); } }
+  @media screen and (max-width: 550px) {
+    .rapping {
+      display: none; } }
+
+.ad {
+  margin-bottom: 100px;
+  height: 420px;
+  background-image: url("../image/combi.jpg");
+  background-size: cover;
+  background-position: center center; }
+  @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+    .ad {
+      background-image: url("../image/combi@2x.jpg"); } }
+  @media screen and (max-width: 550px) {
+    .ad {
+      display: none; } }
+
+.what {
+  position: relative;
+  text-align: center; }
+  .what .what_img {
+    height: 0;
+    padding-top: 42.16%;
+    background-image: url("../image/on-city.png");
+    background-size: cover;
+    background-position: center center;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    max-width: 1600px; }
+    @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+      .what .what_img {
+        background-image: url("../image/on-city@2x.png"); } }
+    @media screen and (max-width: 550px) {
+      .what .what_img {
+        background-image: url("../image/on-city.png");
+        background-size: cover;
+        background-position: center center;
+        padding: 0;
+        height: 400px; } }
+  .what h3 {
+    font-size: 8rem;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: 0 auto;
+    font-family: "Mr Dafoe";
+    color: white;
+    text-shadow: 1px 1px 1px #000; }
+    @media screen and (max-width: 550px) {
+      .what h3 {
+        font-size: 6rem; } }
+    @media screen and (min-width: 550px) {
+      .what h3 .sp_br {
+        display: none; } }
+
+#tile {
+  margin: 0 auto;
+  margin-top: 70px;
+  max-width: 1200px; }
+  #tile .box1 .return {
+    position: relative;
+    height: 400px;
+    background-image: url("../image/18_top.png");
+    background-size: cover;
+    background-position: center center; }
+    @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+      #tile .box1 .return {
+        background-image: url("../image/18_top@2x.png"); } }
+    #tile .box1 .return .cover1 {
+      width: 100%;
+      height: 400px;
+      background: rgba(0, 0, 0, 0.6);
+      text-align: center;
+      opacity: 0; }
+      #tile .box1 .return .cover1 h4 {
+        position: absolute;
+        top: 72%;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        margin: 0 auto;
+        font-size: 5rem;
+        font-family: "Helvetica Neue";
+        font-weight: 500;
+        color: white;
+        text-transform: uppercase; }
+  #tile .box1 .gallery {
+    position: relative;
+    height: 400px;
+    background-image: url("../image/to-gallery.jpg");
+    background-size: cover;
+    background-position: center center; }
+    #tile .box1 .gallery .cover1 {
+      width: 100%;
+      height: 400px;
+      background: rgba(0, 0, 0, 0.6);
+      text-align: center;
+      opacity: 0; }
+      #tile .box1 .gallery .cover1 h4 {
+        position: absolute;
+        top: 72%;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        margin: 0 auto;
+        font-size: 5rem;
+        font-family: "Helvetica Neue";
+        font-weight: 500;
+        color: white;
+        text-transform: uppercase; }
+  #tile .box1 a {
+    text-decoration: none; }
+  #tile .box1:hover .cover1 {
+    opacity: 1;
+    -webkit-transition: .4s;
+    transition: .4s; }
+  #tile .box2 .ft_box1, #tile .box2 .ft_box2 {
+    background-color: #f7f8f8;
+    height: 200px;
+    z-index: 0; }
+  #tile .box2 .ft_16 {
+    height: 200px;
+    background-image: url("../image/home_layout_16.svg");
+    background-size: cover;
+    background-position: center center;
+    z-index: 1; }
+  #tile .box2 .ft_20 {
+    height: 200px;
+    background-image: url("../image/home_layout_20.svg");
+    background-size: cover;
+    background-position: center center;
+    z-index: 1; }
+  #tile .box2 .ft_box1:hover {
+    background-color: #696969;
+    -webkit-transition: .4s;
+    transition: .4s; }
+  #tile .box2 .ft_box2:hover {
+    background-color: #696969;
+    -webkit-transition: .4s;
+    transition: .4s; }
+  #tile .box3 .contact {
+    position: relative;
+    height: 400px;
+    background-image: url("../image/ditail.png");
+    background-size: cover;
+    background-position: center center; }
+    @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+      #tile .box3 .contact {
+        background-image: url("../image/ditail@2x.png"); } }
+    #tile .box3 .contact .cover2 {
+      width: 100%;
+      height: 400px;
+      background: rgba(0, 0, 0, 0.6);
+      text-align: center;
+      opacity: 0; }
+      #tile .box3 .contact .cover2 h4 {
+        position: absolute;
+        top: 72%;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        margin: 0 auto;
+        font-size: 5rem;
+        font-family: "Helvetica Neue";
+        font-weight: 500;
+        color: white;
+        text-transform: uppercase; }
+  #tile .box3 a {
+    text-decoration: none; }
+  #tile .box3:hover .cover2 {
+    opacity: 1;
+    -webkit-transition: .4s;
+    transition: .4s; }
+
+#sp_tile {
+  text-align: center; }
+  #sp_tile a {
+    text-decoration: none; }
+  #sp_tile .box {
+    background: #f7f8f8; }
+    #sp_tile .box h4 {
+      font-family: "Helvetica Neue";
+      font-weight: 300;
+      color: #dacd66;
+      text-transform: uppercase;
+      font-size: 3rem;
+      padding: 15px 0;
+      margin: 2px 0;
+      letter-spacing: .3rem; }
+
+@media screen and (max-width: 550px) {
+  #tile {
+    display: none; } }
+@media screen and (min-width: 550px) {
+  #sp_tile {
+    display: none; } }
+footer {
+  text-align: center;
+  font-size: 1.4rem;
+  font-family: "Domine";
+  font-weight: 100;
+  letter-spacing: .3px;
+  margin: 40px 0; }
+  @media screen and (max-width: 550px) {
+    footer {
+      margin-bottom: 80px; } }
+
+/*# sourceMappingURL=index.css.map */

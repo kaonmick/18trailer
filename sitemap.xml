@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+<!--  created with free sitemap generation system www.sitemapxml.jp  --> 
+<url>
+  <loc>http://www.18-trailer.com/index.html/</loc>
+  <priority>1.0</priority>
+  <lastmod>2017-08-04T10:16:41+09:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.18-trailer.com/index.html</loc>
+  <priority>0.8</priority>
+  <lastmod>2017-08-04T10:16:41+09:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.18-trailer.com/gallery.html</loc>
+  <priority>0.8</priority>
+  <lastmod>2017-08-04T10:16:41+09:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.18-trailer.com/another.html</loc>
+  <priority>0.8</priority>
+  <lastmod>2017-08-04T10:16:41+09:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.18-trailer.com/16ft.html</loc>
+  <priority>0.8</priority>
+  <lastmod>2017-08-04T10:16:40+09:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.18-trailer.com/20ft.html</loc>
+  <priority>0.8</priority>
+  <lastmod>2017-08-04T10:16:40+09:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.18-trailer.com/contact.html</loc>
+  <priority>0.8</priority>
+  <lastmod>2017-08-04T10:16:41+09:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+
+</urlset>
